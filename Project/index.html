@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+
+</head>
+<body>
+    <img class = "head" src="./pictures/logo-full.svg" alt="">
+    <div id="drop-box">
+                <div id="click">
+                    <div class="upload_img">
+                        <img class = "upload-icon" src="./pictures/icon-upload.svg" alt="Upload Icon" />
+                    <form id="queued">
+                        <div class="header"></div>
+                        <div class="saved"></div>
+                        <button type="submit">Upload</button>
+                        <div class="queued"></div>
+                    </form>
+                <input type="file" name = "upload" id = "upload" multiple = "multiple" required/>
+            </div>
+            </div>
+            </div>
+    <div class="formContainer">    
+        <form id = "attachForm">
+       <fieldset class = "fields" id = "fields">
+            <label for="email">Email:</label>
+            <br>
+                <input type="email" id="email" name="email" >
+                <div class="errorMessage"><p id = "email_error"></p></div>
+        <br>
+            <label for="fName">Full Name:</label>
+            <br>
+                <input type="text" id="fullName" name="name" >
+                <div class="errorMessage"><p id = "name_error"></p></div>
+                <br>
+     
+
+            <label for="gitUser">GitHub Username:</label>
+                <br>
+                    <input type="text" id="gituser" name="gituser" >
+                    <div class="errorMessage"><p id = "gituser_error"></p></div>
+                <br>
+        <button type ="submit" id = "btn-click"> Generate My Ticket </button>
+    </fieldset>
+
+    <div class="ticket-generated">
+        <div class="details" id = "details"></div>
+        <img class = "ticket" id = "ticket" src="pictures/pattern-ticket.svg" alt="">
+    </div>
+    </form>
+</body>
+
+<script src = "index.js"></script>
+</html>
